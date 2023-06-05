@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/bg-desktop.jpg");
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+/* 6400 x 450 = 533,333 */
+
+#content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#animation {
+  width: 533px;
+  height: 450px;
+  background: url(./img/board_all_12_150dpi.png) left center;
+  background-size: cover;
+  animation: play 2s steps(12) infinite;
+  display: inline-block;
+}
+
+button a {
+  height: 30px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+@keyframes play {
+  100% {background-position: -6400px;}
+}
